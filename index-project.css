@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+@media screen and (max-width: 480px){
+    
+    #container{
+        height: 600px;
+        width: 300px;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 3%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .attribution{
+        text-align: center;
+    }
+
+
+}
+
+@keyframes slide_in{
+
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+#container{
+    max-height: 800px;
+    max-width: 400px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    animation: slide_in 1s ease forwards;
+}
+
+.equlibrium_img{
+    max-height: 400px;
+    max-width: 400px;
+    margin: 30px;
+    border-radius: 3%;
+}
+
+#text{
+    padding: 30px;
+}
+
+h1{
+    color:white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+p{
+    color:hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    opacity: 0.4;
+}
+
+.etherium_price{
+    color: hsl(178, 100%, 50%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.clock{
+    color:hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+#etherium_and_clock{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+hr{
+    margin: 30px;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color:hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.avatar{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.attribution{
+    font-size: 13px;
+    letter-spacing: 2px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: hsl(215, 51%, 70%);
+    animation: slide_in 1s ease forwards;
+    padding: 10px;
+}
+
+.attribution a{
+    text-decoration: underline;
+    transition: 1s ease;
+    color: hsl(215, 51%, 70%);
+}
+
+.attribution a:hover{
+    transition: 1s ease;
+    color: white;
+}
+
+#clock_icon{
+    transition: 1s ease;
+}
+
+#clock_icon:hover{
+    transform: rotate(360deg);
+}
+
+#etherium_icon{
+    transition: 1s ease;
+}
+
+#etherium_icon:hover{
+    transform: scale(1.3);
+}
